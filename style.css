@@ -6,7 +6,7 @@ header {
     background-color: #e7e025;
     height:80px;
     width:100%;
-    position:relative;
+    position:fixed;
 }
 h1 {
      color:white;
@@ -36,4 +36,67 @@ header a {
 }
 header a:hover {
     text-decoration: underline;
+}
+.home {
+        background-color: antiquewhite;
+        color:white;
+        height:85vh;
+        background-image: url("images/banner.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+}
+.home h2 {
+     font-size:60px;
+}
+.home p {
+     color:#fef7e6;
+     font-size:18px;
+     margin:15px 0;
+}
+.home a {
+     color:white;
+     text-decoration: none;
+     border: 1px solid #ffffff;
+     padding:10px 20px;
+     border-radius: 5px;
+}
+.menu {
+        display:none;
+}
+footer {
+   background-color:#000000;
+   color:#b7b7b7;
+   height:60px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+}
+/* 响应式 */
+@media screen and (max-width: 768px) {
+          header ul {
+                  display:none;
+          }
+          header h1 {
+                  left:50%
+                  transform: translateX(-50%);
+          }
+          .home h2 {
+                  font-size:40px;
+          }
+          .menu {
+                  display: block;
+                  background-color: transparent;
+                  color:white;
+                  font-size: 30px;
+                  position:absolute;
+                  top:15px;
+                  left:20px;
+                  border:none;
+                  cursor: pointer;
+          }
 }
