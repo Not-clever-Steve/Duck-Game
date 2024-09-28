@@ -194,3 +194,10 @@ body {
     color           : #f1f1f1;
     background-color: var(--background-color);
 }
+
+/* 响应式 */
+@media screen and (max-width: 1000px) {
+    .home h2 {
+        font-size:40px;
+    }
+}
