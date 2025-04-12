@@ -43,9 +43,11 @@ html {
 }
 
 .home a {
-     color:black;
-     font-size:18px;
-     margin:15px 0;
+     color:white;
+     text-decoration: none;
+     border: 1px solid #ffffff;
+     padding:10px 20px;
+     border-radius: 5px;
 }
     
 body {
